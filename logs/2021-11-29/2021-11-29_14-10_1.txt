@@ -1,0 +1,2 @@
+2021-11-29 14:10:00 [Timer-0] [run] [123] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:10:00 [pool-2-thread-4] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 4 has completed work.

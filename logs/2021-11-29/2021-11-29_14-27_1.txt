@@ -1,0 +1,98 @@
+2021-11-29 14:27:09 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 600
+2021-11-29 14:27:09 [main] [<init>] [50] INFO  by.epam.task5.entity.Port - Create port by.epam.task5.entity.Port@47987356
+2021-11-29 14:27:09 [pool-2-thread-1] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 1 with 71 containers is in queue. Ship status is - unloading and loading required.
+2021-11-29 14:27:09 [pool-2-thread-3] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 3 with 267 containers is in queue. Ship status is - unloading and loading required.
+2021-11-29 14:27:09 [pool-2-thread-5] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 5 with 184 containers is in queue. Ship status - unloading required.
+2021-11-29 14:27:09 [pool-2-thread-2] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 2 with 24 containers is in queue. Ship status - loading required.
+2021-11-29 14:27:09 [pool-2-thread-4] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 4 with 41 containers is in queue. Ship status - unloading required.
+2021-11-29 14:27:09 [pool-2-thread-1] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 1 is in processing
+2021-11-29 14:27:09 [pool-2-thread-3] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 3 is in processing
+2021-11-29 14:27:09 [pool-2-thread-1] [nextAction] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 1 is unloading.
+2021-11-29 14:27:09 [pool-2-thread-3] [nextAction] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 3 is unloading.
+2021-11-29 14:27:09 [pool-2-thread-3] [unload] [114] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 3 = 0; port = 671
+2021-11-29 14:27:09 [pool-2-thread-1] [unload] [114] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 1 = 0; port = 671
+2021-11-29 14:27:09 [pool-2-thread-1] [nextAction] [36] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 1 is loading.
+2021-11-29 14:27:09 [pool-2-thread-3] [nextAction] [36] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 3 is loading.
+2021-11-29 14:27:09 [pool-2-thread-1] [load] [102] INFO  by.epam.task5.entity.Port - Number of containers after loading: ship 1 = 342; port = 329
+2021-11-29 14:27:09 [pool-2-thread-3] [load] [102] INFO  by.epam.task5.entity.Port - Number of containers after loading: ship 3 = 270; port = 59
+2021-11-29 14:27:09 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:10 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:10 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:11 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:11 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:12 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:12 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:13 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:13 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:14 [pool-2-thread-4] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 4 is in processing
+2021-11-29 14:27:14 [pool-2-thread-4] [nextAction] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 4 is unloading.
+2021-11-29 14:27:14 [pool-2-thread-1] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 1 has completed work.
+2021-11-29 14:27:14 [pool-2-thread-3] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 3 has completed work.
+2021-11-29 14:27:14 [pool-2-thread-2] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 2 is in processing
+2021-11-29 14:27:14 [pool-2-thread-4] [unload] [114] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 4 = 0; port = 541
+2021-11-29 14:27:14 [pool-2-thread-2] [nextAction] [36] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 2 is loading.
+2021-11-29 14:27:14 [pool-2-thread-2] [load] [102] INFO  by.epam.task5.entity.Port - Number of containers after loading: ship 2 = 483; port = 0
+2021-11-29 14:27:14 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:14 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:15 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:15 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:16 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:16 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:17 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:17 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:18 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:18 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:19 [pool-2-thread-5] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 5 is in processing
+2021-11-29 14:27:19 [pool-2-thread-4] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 4 has completed work.
+2021-11-29 14:27:19 [pool-2-thread-5] [nextAction] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 5 is unloading.
+2021-11-29 14:27:19 [pool-2-thread-2] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 2 has completed work.
+2021-11-29 14:27:19 [pool-2-thread-5] [unload] [114] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 5 = 0; port = 684
+2021-11-29 14:27:19 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:19 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:20 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:20 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:21 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:21 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:22 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:22 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:23 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:23 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 684
+2021-11-29 14:27:24 [pool-2-thread-5] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 5 has completed work.
+2021-11-29 14:27:42 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 600
+2021-11-29 14:27:42 [main] [<init>] [50] INFO  by.epam.task5.entity.Port - Create port by.epam.task5.entity.Port@47987356
+2021-11-29 14:27:42 [pool-2-thread-3] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 3 with 416 containers is in queue. Ship status - unloading required.
+2021-11-29 14:27:42 [pool-2-thread-4] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 4 with 67 containers is in queue. Ship status - unloading required.
+2021-11-29 14:27:42 [pool-2-thread-5] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 5 with 345 containers is in queue. Ship status - loading required.
+2021-11-29 14:27:42 [pool-2-thread-2] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 2 with 109 containers is in queue. Ship status - unloading required.
+2021-11-29 14:27:42 [pool-2-thread-1] [nextAction] [32] INFO  by.epam.task5.state.WaitingState - Ship 1 with 260 containers is in queue. Ship status - unloading required.
+2021-11-29 14:27:42 [pool-2-thread-2] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 2 is in processing
+2021-11-29 14:27:42 [pool-2-thread-4] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 4 is in processing
+2021-11-29 14:27:42 [pool-2-thread-2] [nextAction] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 2 is unloading.
+2021-11-29 14:27:42 [pool-2-thread-4] [nextAction] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 4 is unloading.
+2021-11-29 14:27:42 [pool-2-thread-4] [unload] [114] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 4 = 0; port = 776
+2021-11-29 14:27:42 [pool-2-thread-2] [unload] [114] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 2 = 0; port = 709
+2021-11-29 14:27:42 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:43 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:43 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:44 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:44 [pool-2-thread-3] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 3 is in processing
+2021-11-29 14:27:44 [pool-2-thread-5] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 5 is in processing
+2021-11-29 14:27:44 [pool-2-thread-3] [nextAction] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 3 is unloading.
+2021-11-29 14:27:44 [pool-2-thread-2] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 2 has completed work.
+2021-11-29 14:27:44 [pool-2-thread-3] [unload] [114] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 3 = 0; port = 916
+2021-11-29 14:27:44 [pool-2-thread-5] [nextAction] [36] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 5 is loading.
+2021-11-29 14:27:44 [pool-2-thread-4] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 4 has completed work.
+2021-11-29 14:27:44 [pool-2-thread-5] [load] [102] INFO  by.epam.task5.entity.Port - Number of containers after loading: ship 5 = 464; port = 797
+2021-11-29 14:27:44 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:45 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:45 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:46 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:46 [pool-2-thread-1] [call] [91] INFO  by.epam.task5.entity.Ship - Ship 1 is in processing
+2021-11-29 14:27:46 [pool-2-thread-1] [nextAction] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 1 is unloading.
+2021-11-29 14:27:46 [pool-2-thread-1] [unload] [114] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 1 = 0; port = 760
+2021-11-29 14:27:46 [pool-2-thread-5] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 5 has completed work.
+2021-11-29 14:27:46 [pool-2-thread-3] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 3 has completed work.
+2021-11-29 14:27:46 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:47 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:47 [Timer-0] [run] [127] INFO  by.epam.task5.entity.Port - Number of containers in port = 500
+2021-11-29 14:27:48 [pool-2-thread-1] [nextAction] [35] INFO  by.epam.task5.state.EndState - Ship 1 has completed work.
