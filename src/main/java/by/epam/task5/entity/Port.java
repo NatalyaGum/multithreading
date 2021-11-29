@@ -1,6 +1,5 @@
 package by.epam.task5.entity;
 
-
 import by.epam.task5.exception.PortException;
 import by.epam.task5.reader.PortReader;
 import org.apache.logging.log4j.Level;
@@ -28,11 +27,6 @@ public class Port {
     private Port() throws PortException, IOException {
         PortReader portReader = new PortReader();
         int[] value = portReader.readFromFile("src\\main\\resources\\port.properties");
-       /* PortValidator validator = new PortValidator();
-        if (!validator.isValidate(value)) {
-            logger.log(Level.ERROR, "Incorrect data " + value);
-            throw new PortException("Incorrect data " + value);
-        }*/
         int countOfPiers = value[0];
         int countOfShips = value[1];
         containerCapacity = value[2];
@@ -121,10 +115,11 @@ public class Port {
             @Override
             public void run() {
 
-                long percent =100* containerNumber / containerCapacity;
+                long percent = 100 * containerNumber / containerCapacity;
                 if (percent > MAX_LOAD_FACTOR || percent < MIN_LOAD_FACTOR) {
                     containerNumber = containerCapacity / 2;
-                }logger.log(Level.INFO, "Number of containers in port = " + containerNumber);
+                }
+                logger.log(Level.INFO, "Number of containers in port = " + containerNumber);
             }
         };
         timer.schedule(timerTask, 1, TASK_PERIOD);

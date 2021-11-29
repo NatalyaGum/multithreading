@@ -11,19 +11,6 @@ import java.io.IOException;
 
 public class LoadingUnloadingState implements ShipState {
     private static Logger logger = LogManager.getLogger();
-    /*private static ReceptionState instance;
-
-    public static ReceptionState getInstance() {
-        while (instance == null) {
-            instance = new ReceptionState();
-        }
-        return instance;
-    }*/
-
- /*   @Override
-    public void waitingState(Ship ship) {
-        throw new UnsupportedOperationException();
-    }*/
 
     @Override
     public void nextAction(Ship ship) throws PortException, IOException {
@@ -36,11 +23,7 @@ public class LoadingUnloadingState implements ShipState {
             logger.log(Level.INFO, "Ship " + ship.getShipId() + " is loading.");
             port.load(ship);
         }
-        ship.setShipState(new EndState());//.getInstance());
+        ship.setShipState(new EndState());
     }
 
-   /* @Override
-    public void endState(Ship ship) {
-        throw new UnsupportedOperationException();
-    }*/
 }
