@@ -1,0 +1,14 @@
+2021-11-28 19:49:59 [main] [<init>] [48] INFO  by.epam.task5.entity.Port - Create port by.epam.task5.entity.Port@47987356
+2021-11-28 19:49:59 [pool-2-thread-1] [waitingState] [31] INFO  by.epam.task5.state.WaitingState - Ship 1 with 126 containers is in queue. Ship status is unloaded.
+2021-11-28 19:49:59 [pool-2-thread-4] [waitingState] [31] INFO  by.epam.task5.state.WaitingState - Ship 4 with 18 containers is in queue. Ship status is loaded and unloaded. Ship status is loaded.
+2021-11-28 19:49:59 [pool-2-thread-3] [waitingState] [31] INFO  by.epam.task5.state.WaitingState - Ship 3 with 131 containers is in queue. Ship status is unloaded.
+2021-11-28 19:49:59 [pool-2-thread-2] [waitingState] [31] INFO  by.epam.task5.state.WaitingState - Ship 2 with 74 containers is in queue. Ship status is unloaded.
+2021-11-28 19:49:59 [pool-2-thread-5] [waitingState] [31] INFO  by.epam.task5.state.WaitingState - Ship 5 with 425 containers is in queue. Ship status is unloaded.
+2021-11-28 19:49:59 [pool-2-thread-1] [receptionState] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 1 is unloading.
+2021-11-28 19:49:59 [pool-2-thread-4] [receptionState] [32] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 4 is unloading.
+2021-11-28 19:49:59 [pool-2-thread-1] [unload] [112] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 1 = 0; port = 726
+2021-11-28 19:49:59 [pool-2-thread-4] [unload] [112] INFO  by.epam.task5.entity.Port - Number of containers after unloading: ship 4 = 0; port = 744
+2021-11-28 19:49:59 [pool-2-thread-4] [receptionState] [36] INFO  by.epam.task5.state.LoadingUnloadingState - Ship 4 is loading.
+2021-11-28 19:49:59 [pool-2-thread-1] [call] [92] INFO  by.epam.task5.entity.Ship - Ship 1 is in processing
+2021-11-28 19:49:59 [pool-2-thread-4] [load] [100] INFO  by.epam.task5.entity.Port - Number of containers after loading: ship 4 = 256; port = 0
+2021-11-28 19:49:59 [pool-2-thread-4] [call] [92] INFO  by.epam.task5.entity.Ship - Ship 4 is in processing
