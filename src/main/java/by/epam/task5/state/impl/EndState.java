@@ -1,8 +1,9 @@
-package by.epam.task5.state;
+package by.epam.task5.state.impl;
 
 import by.epam.task5.entity.Port;
 import by.epam.task5.entity.Ship;
 import by.epam.task5.exception.PortException;
+import by.epam.task5.state.ShipState;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

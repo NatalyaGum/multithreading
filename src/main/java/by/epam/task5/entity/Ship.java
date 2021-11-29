@@ -2,7 +2,7 @@ package by.epam.task5.entity;
 
 import by.epam.task5.exception.PortException;
 import by.epam.task5.state.ShipState;
-import by.epam.task5.state.WaitingState;
+import by.epam.task5.state.impl.WaitingState;
 import by.epam.task5.util.IdGenerator;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
