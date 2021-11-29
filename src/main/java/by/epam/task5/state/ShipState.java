@@ -8,7 +8,4 @@ import java.io.IOException;
 public interface ShipState {
     void nextAction(Ship ship) throws PortException, IOException;
 
-    /*void receptionState(Ship ship) throws PortException, IOException;
-
-    void endState(Ship ship) throws PortException, IOException;*/
 }

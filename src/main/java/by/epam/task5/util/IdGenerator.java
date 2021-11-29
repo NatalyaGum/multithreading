@@ -1,12 +1,13 @@
 package by.epam.task5.util;
-    public class IdGenerator {
-        private static int counter;
 
-        private IdGenerator() {
-        }
+public class IdGenerator {
+    private static int counter;
 
-        public static int generateId() {
-            return ++counter;
-        }
+    private IdGenerator() {
     }
+
+    public static int generateId() {
+        return ++counter;
+    }
+}
 

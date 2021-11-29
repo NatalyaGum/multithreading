@@ -27,10 +27,8 @@ public class Ship implements Callable {
         this.shipId = IdGenerator.generateId();
         this.containerCapacity = (int) (900 * Math.random()) + 100;
         this.containerNumber = (int) (this.containerCapacity * Math.random());
-      //  double random = Math.random();
         if (Math.random() > 0.5) {
             isLoaded = true;
-          //  random = Math.random();
             isUnloaded = Math.random() > 0.5;
         } else {
             isLoaded = false;
@@ -76,24 +74,12 @@ public class Ship implements Callable {
         Semaphore semaphore = port.getSemaphore();
         List<Pier> piers = port.getPiers();
         try {
-            this.shipState = new WaitingState();//getInstance();
+            this.shipState = new WaitingState();
             shipState.nextAction(this);//waiting
             semaphore.acquire();
-            //int number = -1;
-            /*synchronized (piers) {
-                for (int i = 0; i < piers.size(); i++) {
-                    if (piers.get(i).isEmpty()) {
-                        piers.get(i).setEmpty();
-                        number = i;
-                        break;
-                    }
-                }*/
             logger.log(Level.INFO, "Ship " + this.getShipId() + " is in processing");
-                shipState.nextAction(this);//processing
-
-                TimeUnit.MILLISECONDS.sleep(1000);
-               // piers.get(number).setEmpty();
-           // }
+            shipState.nextAction(this);//processing
+            TimeUnit.MILLISECONDS.sleep(1000);
             semaphore.release();
             shipState.nextAction(this);//end
         } catch (InterruptedException e) {

@@ -11,25 +11,7 @@ import java.io.IOException;
 
 public class EndState implements ShipState {
     private static Logger logger = LogManager.getLogger();
-   /* private static EndState instance;
 
-    public static EndState getInstance() {
-        while (instance == null) {
-            instance = new EndState();
-        }
-        return instance;
-    }*/
-
-  /*  @Override
-    public void waitingState(Ship ship) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void receptionState(Ship ship) {
-        throw new UnsupportedOperationException();
-    }
-*/
     @Override
     public void nextAction(Ship ship) throws PortException, IOException {
         logger.log(Level.INFO, "Ship " + ship.getShipId() + " has completed work.");
