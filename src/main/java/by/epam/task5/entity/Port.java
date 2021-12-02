@@ -6,10 +6,11 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Port {
     private static Logger logger = LogManager.getLogger();
@@ -23,10 +24,11 @@ public class Port {
     private ArrayList<Ship> ships;
     private Semaphore semaphore;
     private static final AtomicBoolean instanceInitialized = new AtomicBoolean(false);//uppercase
+    private static Lock instanceLocker = new ReentrantLock();
 
-    private Port() throws PortException, IOException {
+    private Port() throws PortException {
         PortReader portReader = new PortReader();
-        int[] value = portReader.readFromFile("src\\main\\resources\\port.properties");
+        int[] value = portReader.readFromFile("target/classes/port.properties");
         int countOfPiers = value[0];
         int countOfShips = value[1];
         containerCapacity = value[2];
@@ -44,10 +46,15 @@ public class Port {
         logger.log(Level.INFO, "Create port " + this);
     }
 
-    public static Port getInstance() throws PortException, IOException {
-        while (instance == null) {
-            if (instanceInitialized.compareAndSet(false, true)) {
-                instance = new Port();
+    public static Port getInstance() throws PortException {
+        if (!instanceInitialized.get()) {
+            instanceLocker.lock();
+            try {
+                if (instanceInitialized.compareAndSet(false, true)) {
+                    instance = new Port();
+                }
+            } finally {
+                instanceLocker.unlock();
             }
         }
         return instance;
@@ -114,7 +121,6 @@ public class Port {
         TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {
-
                 long percent = 100 * containerNumber / containerCapacity;
                 if (percent > MAX_LOAD_FACTOR || percent < MIN_LOAD_FACTOR) {
                     containerNumber = containerCapacity / 2;

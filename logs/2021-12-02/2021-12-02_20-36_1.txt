@@ -1,0 +1,1 @@
+2021-12-02 20:36:11 [main] [readFromFile] [28] ERROR by.epam.task5.reader.PortReader - file:\C:\Users\Public\Training%20Java\Blinou\MULTITHREADING\target\classes\port.properties (Синтаксическая ошибка в имени файла, имени папки или метке тома)

@@ -1,15 +1,19 @@
-package by.epam.task5._MAIN;
+package by.epam.task5.main;
 
 import by.epam.task5.entity.Port;
 import by.epam.task5.entity.Ship;
 import by.epam.task5.exception.PortException;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Main {
+    private static Logger logger = LogManager.getLogger();
+
     public static void main(String[] args) {
         Port port;
         try {
@@ -19,10 +23,8 @@ public class Main {
             ships.forEach(service::submit);
             service.shutdown();
             service.shutdown();
-        } catch (IOException e) {
-            e.printStackTrace();
         } catch (PortException e) {
-            e.printStackTrace();
+            logger.log(Level.ERROR, e.getMessage());
         }
     }
 }

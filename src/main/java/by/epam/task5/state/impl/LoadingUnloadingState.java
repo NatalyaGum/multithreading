@@ -14,7 +14,8 @@ public class LoadingUnloadingState implements ShipState {
     private static Logger logger = LogManager.getLogger();
 
     @Override
-    public void nextAction(Ship ship) throws PortException, IOException {
+    public void nextAction(Ship ship) throws PortException {
+
         Port port = Port.getInstance();
         if (ship.isUnloaded()) {
             logger.log(Level.INFO, "Ship " + ship.getShipId() + " is unloading.");
@@ -23,8 +24,8 @@ public class LoadingUnloadingState implements ShipState {
         if (ship.isLoaded()) {
             logger.log(Level.INFO, "Ship " + ship.getShipId() + " is loading.");
             port.load(ship);
+
         }
-        ship.setShipState(new EndState());
     }
 
 }

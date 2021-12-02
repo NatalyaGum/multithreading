@@ -1,0 +1,4 @@
+2021-12-02 19:45:07 [main] [readFromFile] [20] ERROR by.epam.task5.reader.PortReader - resources\data\port.properties (Системе не удается найти указанный путь)
+2021-12-02 19:45:17 [main] [readFromFile] [20] ERROR by.epam.task5.reader.PortReader - data\port.properties (Системе не удается найти указанный путь)
+2021-12-02 19:45:42 [main] [readFromFile] [20] ERROR by.epam.task5.reader.PortReader - data\port.properties (Системе не удается найти указанный путь)
+2021-12-02 19:45:59 [main] [readFromFile] [20] ERROR by.epam.task5.reader.PortReader - data\port.properties (Системе не удается найти указанный путь)

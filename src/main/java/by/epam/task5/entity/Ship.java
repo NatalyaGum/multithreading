@@ -9,12 +9,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.concurrent.Callable;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-public class Ship implements Callable {
+public class Ship implements Runnable {
     private static Logger logger = LogManager.getLogger();
     private int shipId;
     private int containerCapacity;
@@ -60,6 +58,7 @@ public class Ship implements Callable {
         return isUnloaded;
     }
 
+
     public void setContainerNumber(int containerNumber) {
         this.containerNumber = containerNumber;
     }
@@ -69,23 +68,25 @@ public class Ship implements Callable {
     }
 
     @Override
-    public String call() throws PortException, IOException {
-        Port port = Port.getInstance();
-        Semaphore semaphore = port.getSemaphore();
-        List<Pier> piers = port.getPiers();
+    public void run() {
+        Port port;
+        Semaphore semaphore;
         try {
-            this.shipState = new WaitingState();
-            shipState.nextAction(this);//waiting
-            semaphore.acquire();
-            logger.log(Level.INFO, "Ship " + this.getShipId() + " is in processing");
-            shipState.nextAction(this);//processing
-            TimeUnit.MILLISECONDS.sleep(1000);
-            semaphore.release();
-            shipState.nextAction(this);//end
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            logger.log(Level.INFO, e.getMessage());
+            port = Port.getInstance();
+            semaphore = port.getSemaphore();
+            try {
+                this.shipState = new WaitingState();
+                shipState.nextAction(this);//waiting
+                semaphore.acquire();
+                logger.log(Level.INFO, "Ship " + this.getShipId() + " is in processing");
+                shipState.nextAction(this);//processing
+                TimeUnit.MILLISECONDS.sleep(1000);
+                shipState.nextAction(this);//end
+            } finally {
+                semaphore.release();
+            }
+        } catch (InterruptedException | IOException | PortException e) {
+            logger.log(Level.ERROR, e.getMessage());
         }
-        return "";
     }
 }
