@@ -1,10 +1,8 @@
 package by.epam.task5.exception;
 
-import java.io.IOException;
-
 public class PortException extends Exception {
-    public PortException() {
-    }
+
+    public PortException() {    }
 
     public PortException(String message) {
         super(message);

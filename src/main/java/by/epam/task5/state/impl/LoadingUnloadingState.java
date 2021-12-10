@@ -8,8 +8,6 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
-
 public class LoadingUnloadingState implements ShipState {
     private static Logger logger = LogManager.getLogger();
 
@@ -24,8 +22,6 @@ public class LoadingUnloadingState implements ShipState {
         if (ship.isLoaded()) {
             logger.log(Level.INFO, "Ship " + ship.getShipId() + " is loading.");
             port.load(ship);
-
         }
     }
-
 }

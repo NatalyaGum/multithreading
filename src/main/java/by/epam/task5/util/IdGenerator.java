@@ -10,4 +10,3 @@ public class IdGenerator {
         return ++counter;
     }
 }
-

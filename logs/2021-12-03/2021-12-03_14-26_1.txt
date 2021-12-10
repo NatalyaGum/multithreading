@@ -1,0 +1,2 @@
+2021-12-03 14:26:24 [main] [readFromFile] [22] ERROR by.epam.task5.reader.impl.PortReaderImpl - getClass().getClassLoader().getResource(\port.properties) (Системе не удается найти указанный путь)
+2021-12-03 14:26:24 [main] [main] [27] ERROR by.epam.task5.main.Main - IOException in read from file method with path getClass().getClassLoader().getResource(/port.properties)

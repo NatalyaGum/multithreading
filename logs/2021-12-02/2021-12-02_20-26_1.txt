@@ -1,4 +1,4 @@
-2021-12-02 20:26:12 [main] [readFromFile] [27] ERROR by.epam.task5.reader.PortReader - countOfPiers=2
+2021-12-02 20:26:12 [main] [readFromFile] [27] ERROR by.epam.task5.reader.impl.PortReaderImpl - countOfPiers=2
 countOfShips=50
 containerCapacity=1500
 containerNumber=600 (Синтаксическая ошибка в имени файла, имени папки или метке тома)

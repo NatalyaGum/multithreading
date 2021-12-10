@@ -1,0 +1,8 @@
+2021-12-03 14:42:18 [main] [readFromFile] [22] ERROR by.epam.task5.reader.impl.PortReaderImpl - countOfPiers=2
+countOfShips=50
+containerCapacity=1500
+containerNumber=600 (Синтаксическая ошибка в имени файла, имени папки или метке тома)
+2021-12-03 14:42:18 [main] [main] [29] ERROR by.epam.task5.main.Main - IOException in read from file method with path countOfPiers=2
+countOfShips=50
+containerCapacity=1500
+containerNumber=600

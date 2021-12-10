@@ -1,7 +1,7 @@
 package by.epam.task5.entity;
 
 import by.epam.task5.exception.PortException;
-import by.epam.task5.reader.PortReader;
+import by.epam.task5.reader.impl.PortReaderImpl;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,8 +27,8 @@ public class Port {
     private static Lock instanceLocker = new ReentrantLock();
 
     private Port() throws PortException {
-        PortReader portReader = new PortReader();
-        int[] value = portReader.readFromFile("target/classes/port.properties");
+        PortReaderImpl portReaderImpl = new PortReaderImpl();
+        int[] value = portReaderImpl.readFromFile("port.properties");
         int countOfPiers = value[0];
         int countOfShips = value[1];
         containerCapacity = value[2];
